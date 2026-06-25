@@ -1,0 +1,2 @@
+# Care-Transition-Efficiency-Placement-Outcome-Analytics
+Care Transition Efficiency &amp; Placement Outcome Analytics analyzes the movement of children from CBP custody to HHS care and sponsor placement. It tracks transfer efficiency, discharge effectiveness, throughput, and backlogs using interactive dashboards to identify delays, improve reunification outcomes, and support data-driven decision-making.
