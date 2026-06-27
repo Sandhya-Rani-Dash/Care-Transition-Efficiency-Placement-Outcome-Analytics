@@ -10,7 +10,6 @@ Care Transition Efficiency &amp; Placement Outcome Analytics analyzes the moveme
 - Outcome Stability Analysis
 - Weekday vs Weekend Analysis
 - Year-over-Year Analytics
-- Statistical Testing
 - Interactive Streamlit Dashboard
 
 ## Technologies Used
