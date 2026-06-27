@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+from pathlib import Path
 
 st.set_page_config(
     page_title="Discharge Analytics",
@@ -87,7 +88,10 @@ st.markdown("""
 
 # ── Data ──────────────────────────────────────────────────────────────────────
 
-df = pd.read_csv("../data/cleaned_uac.csv")
+BASE_DIR = Path(__file__).resolve().parents[2]
+DATA_PATH = BASE_DIR / "data" / "cleaned_uac.csv"
+
+df = pd.read_csv(DATA_PATH)
 df['Date'] = pd.to_datetime(df['Date'])
 
 avg_discharge   = round(df['Discharge_Effectiveness'].mean(), 3)

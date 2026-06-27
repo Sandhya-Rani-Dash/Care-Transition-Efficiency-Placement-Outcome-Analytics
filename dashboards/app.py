@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+from pathlib import Path
  
 st.set_page_config(
     page_title="Care Transition Analytics",
@@ -126,7 +127,10 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("### 📅 Date Filter")
  
-    df_raw = pd.read_csv("../data/cleaned_uac.csv")
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    DATA_PATH = BASE_DIR / "data" / "cleaned_uac.csv"
+
+    df_raw = pd.read_csv(DATA_PATH)
     df_raw['Date'] = pd.to_datetime(df_raw['Date'])
     
     st.markdown("**Quick select year:**")

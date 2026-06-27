@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+from pathlib import Path
 
 st.set_page_config(
     page_title="Outcome Stability Analysis",
@@ -77,7 +78,10 @@ st.markdown("""
 
 # ── Data ──────────────────────────────────────────────────────────────────────
 
-df = pd.read_csv("../data/cleaned_uac.csv")
+BASE_DIR = Path(__file__).resolve().parents[2]
+DATA_PATH = BASE_DIR / "data" / "cleaned_uac.csv"
+
+df = pd.read_csv(DATA_PATH)
 df['Date'] = pd.to_datetime(df['Date'])
 
 std_dev   = round(df['Discharge_Effectiveness'].std(), 4)

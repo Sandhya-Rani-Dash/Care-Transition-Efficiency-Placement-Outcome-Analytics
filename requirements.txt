@@ -5,4 +5,5 @@ plotly
 matplotlib
 seaborn
 statsmodels
-networkx
+network
+pathlib

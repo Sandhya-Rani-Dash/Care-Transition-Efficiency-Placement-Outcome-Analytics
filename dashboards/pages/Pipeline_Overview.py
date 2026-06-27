@@ -2,6 +2,7 @@ import streamlit as st
 import plotly.graph_objects as go
 import plotly.express as px
 import pandas as pd
+from pathlib import Path
 
 st.set_page_config(
     page_title="Care Pipeline Overview",
@@ -107,7 +108,10 @@ st.markdown("""
 
 # ── Data ──────────────────────────────────────────────────────────────────────
 
-df = pd.read_csv("../data/cleaned_uac.csv")
+BASE_DIR = Path(__file__).resolve().parents[2]
+DATA_PATH = BASE_DIR / "data" / "cleaned_uac.csv"
+
+df = pd.read_csv(DATA_PATH)
 df['Date'] = pd.to_datetime(df['Date'])
 
 avg_cbp       = int(round(df['Children in CBP custody'].mean()))

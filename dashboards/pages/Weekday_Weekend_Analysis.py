@@ -3,6 +3,7 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import numpy as np
+from pathlib import Path
 
 st.set_page_config(
     page_title="Weekday vs Weekend Analysis",
@@ -89,7 +90,10 @@ st.markdown("""
 
 # ── Data ──────────────────────────────────────────────────────────────────────
 
-df = pd.read_csv("../data/cleaned_uac.csv")
+BASE_DIR = Path(__file__).resolve().parents[2]
+DATA_PATH = BASE_DIR / "data" / "cleaned_uac.csv"
+
+df = pd.read_csv(DATA_PATH)
 df['Date'] = pd.to_datetime(df['Date'])
 df['Day_Type'] = np.where(df['Date'].dt.dayofweek >= 5, 'Weekend', 'Weekday')
 df['Day_Name'] = df['Date'].dt.day_name()
