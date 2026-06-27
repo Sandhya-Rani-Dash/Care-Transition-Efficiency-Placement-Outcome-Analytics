@@ -20,8 +20,10 @@ Care Transition Efficiency &amp; Placement Outcome Analytics analyzes the moveme
 - Streamlit
 - Statistical Analysis
 
-## Author
+## Author 
 
-Sandhya Rani Dash
+**Sandhya Rani Dash**
 
-Github Link = https://github.com/Sandhya-Rani-Dash/Care-Transition-Efficiency-Placement-Outcome-Analytics
+**Live Dashboard:** https://care-transition-efficiency-placement-outcome-analytics-mxvpwqq.streamlit.app/
+
+**GitHub Repository:** https://github.com/Sandhya-Rani-Dash/Care-Transition-Efficiency-Placement-Outcome-Analytics
