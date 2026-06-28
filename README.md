@@ -75,8 +75,6 @@ Care Transition Efficiency & Placement Outcome Analytics is an interactive Strea
 # Dashboard Preview
 An interactive Streamlit dashboard that visualizes UAC care pipeline performance through operational KPIs, trends, and analytics to support data-driven decision-making.
 
----
-
 ## App Page
 The landing page providing a centralized overview of the project with intuitive navigation to all analytics modules.
 
