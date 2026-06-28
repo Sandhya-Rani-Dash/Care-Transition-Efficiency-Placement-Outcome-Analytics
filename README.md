@@ -34,16 +34,16 @@ Care Transition Efficiency & Placement Outcome Analytics is an interactive Strea
 
 ## Modules and its Description :
 
--**Executive Summary        -**  High-level KPI overview and recommendations
--**Care Pipeline Overview   -**  Sankey Diagram and throughput analysis
--**Transfer Analytics       -**  Transfer efficiency trends and monthly analysis
--**Discharge Analytics      -**  Discharge effectiveness analysis
--**Bottleneck Analysis      -**  Transfer backlog detection
--**Stagnation Detection     -**  Alert generation and stagnation periods
--**Outcome Stability        -**  Rolling performance analysis
--**Monthly Trends           -**  Seasonal trend analysis
--**Weekday vs Weekend       -**  Operational comparison
--**Year-over-Year Analytics -**  Annual KPI comparison
+- **Executive Summary        -**  High-level KPI overview and recommendations
+- **Care Pipeline Overview   -**  Sankey Diagram and throughput analysis
+- **Transfer Analytics       -**  Transfer efficiency trends and monthly analysis
+- **Discharge Analytics      -**  Discharge effectiveness analysis
+- **Bottleneck Analysis      -**  Transfer backlog detection
+- **Stagnation Detection     -**  Alert generation and stagnation periods
+- **Outcome Stability        -**  Rolling performance analysis
+- **Monthly Trends           -**  Seasonal trend analysis
+- **Weekday vs Weekend       -**  Operational comparison
+- **Year-over-Year Analytics -**  Annual KPI comparison
 
 ---
 
